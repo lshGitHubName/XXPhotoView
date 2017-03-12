@@ -11,11 +11,11 @@
         }
     }
 ```
-2.在自己Modul的build.gradle中添加```java compile 'com.github.lshGitHubName:XXPhotoView:v1.0.0'```
+2.在自己Modul的build.gradle中添加```compile 'com.github.luoshihai:XXPhotoView:v1.0.0'```
 如下:
 ```java
 dependencies {
-	        compile 'com.github.lshGitHubName:XXPhotoView:v1.0.0'
+	      compile 'com.github.luoshihai:XXPhotoView:v1.0.0'
 	}
 ```
 
