@@ -1,5 +1,6 @@
 package com.luoshihai.xxphotoview;
 
+import android.annotation.SuppressLint;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,7 @@ public class ImgActivity extends AppCompatActivity {
         mPhotoView.enable();
 
         mPhotoView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @SuppressLint("NewApi")
             @Override
             public void onGlobalLayout() {
                 Glide.with(ImgActivity.this).load(url).placeholder(R.drawable.loading).into(mPhotoView);
